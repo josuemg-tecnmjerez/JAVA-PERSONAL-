@@ -9,9 +9,9 @@ public class App {
 
     public static void main(String[] args) {
 
-        // Generar un vector de 10000
+        // Generar un vector de 100000
         aleatorioArray g = new aleatorioArray();
-        int[] desordenado = g.generarVector(10000);
+        int[] desordenado = g.generarVector(100000);
     
 // Ordenamiento por intercalacion
 
