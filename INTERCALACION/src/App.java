@@ -9,9 +9,9 @@ public class App {
 
     public static void main(String[] args) {
 
-        // Generar un vector de 1000
+        // Generar un vector de 10000
         aleatorioArray g = new aleatorioArray();
-        int[] desordenado = g.generarVector(1000);
+        int[] desordenado = g.generarVector(10000);
     
 // Ordenamiento por intercalacion
 
@@ -23,7 +23,7 @@ public class App {
         //CLONAMOS EL VECTOR ORIGINAL
         int[] datosOI = desordenado.clone();
 
-        System.out.println("Los valores del arreglo son" + Arrays.toString(datosOI));
+        //System.out.println("Los valores del arreglo son" + Arrays.toString(datosOI));
 
 
 
@@ -32,7 +32,7 @@ public class App {
         long inicioOI = System.nanoTime();
 
         OI.ordenar(datosOI);
-        System.out.println(Arrays.toString(datosOI));
+        //System.out.println(Arrays.toString(datosOI));
 
         long finalOI = System.nanoTime();
 
@@ -82,7 +82,7 @@ public class App {
         System.out.println(saludo2.getSaludo());
 
         int[] datosMD = desordenado.clone();//MD de Mezcla Directa
-        System.out.println("Los Valores a ordenar del arreglo son" + Arrays.toString(datosMD) );
+        //System.out.println("Los Valores a ordenar del arreglo son" + Arrays.toString(datosMD) );
 
         MezclaDirectaEduard MD = new MezclaDirectaEduard();
 
@@ -90,7 +90,7 @@ public class App {
 
         MD.ordenar(datosMD);
 
-        System.out.println(Arrays.toString(datosMD));
+        //System.out.println(Arrays.toString(datosMD));
         long finalMD = System.nanoTime();
 
         long totalMD = finalMD - inicioMD;
@@ -111,7 +111,7 @@ public class App {
         
         int[] datos1 = desordenado.clone();
 
-        System.out.println("Los valores del arreglo son" + Arrays.toString(datos1));
+        //System.out.println("Los valores del arreglo son" + Arrays.toString(datos1));
 
 
 
@@ -120,7 +120,7 @@ public class App {
         long inicio1 = System.nanoTime();
 
         MN.ordenar(datos1);
-        System.out.println(Arrays.toString(datos1));
+        //System.out.println(Arrays.toString(datos1));
 
         long final1 = System.nanoTime();
 
